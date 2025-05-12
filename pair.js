@@ -81,6 +81,8 @@ router.get('/', async (req, res) => {
                     // Add "UMAR=" prefix to the session ID
                     let stringSession = `${megaUrl.replace('https://mega.nz/file/', '')}`;
 
+                    const sid = "STARK-ALI~" + string_session;
+
                     // Send the session ID to the target number
                     const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
                     await Tohidkhan6332.sendMessage(userJid, { text: stringSession });
